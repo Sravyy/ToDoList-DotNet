@@ -1,13 +1,12 @@
 ﻿
-@{
-
-}
+@model IEnumerable<ToDoList.Models.Item>
 
 <html>
 <head>
     <title>To Do List</title>
 </head>
 <body>
-    <h2>Welcome to the To Do List!</h2>
+    <h2>To Do List</h2>
+    <p>@Html.ActionLink("Task list", "Index", "Items")</p>
 </body>
 </html>
